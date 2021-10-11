@@ -1,0 +1,388 @@
+/* General Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Libre Franklin", sans-serif;
+  line-height: 1.6;
+  background: white;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+}
+
+/* Navbar*/
+#index {
+  color: white;
+  text-align: center;
+  background-color: white;
+  background: url("/img/background.jpg") no-repeat center right/cover;
+  height: 100vh;
+}
+#home {
+  height: 5.5rem;
+  color: black;
+  text-align: center;
+}
+#home #main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  color: black;
+}
+#home #main-nav a {
+  border-bottom: 3px transparent solid;
+  transition: border-color 0.5s;
+  color: black;
+}
+#home #main-nav a:hover {
+  border-color: black;
+}
+#home #main-nav a.current {
+  border-color: black;
+}
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  color: white;
+}
+#main-nav h1 {
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+}
+#main-nav ul {
+  display: flex;
+}
+#main-nav li {
+  padding: 1rem 1.5rem;
+}
+#main-nav a {
+  border-bottom: 3px transparent solid;
+  transition: border-color 0.5s;
+  color: white;
+}
+#main-nav a:hover {
+  border-color: white;
+}
+#main-nav a.current {
+  border-color: white;
+}
+.header-content {
+  padding-top: 15%;
+  font-size: x-large;
+  color: white;
+}
+.btn {
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  font-size: 15px;
+  font-weight: 100;
+  display: inline-block;
+  margin-top: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 3px;
+  width: 100px;
+}
+
+/* Overview */
+#overview {
+  height: 100vh;
+}
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.content div {
+  height: 50vh;
+}
+
+.content div img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+/* Overlay */
+.city-scape {
+  position: relative;
+}
+.portraits {
+  position: relative;
+}
+.landscape {
+  position: relative;
+}
+.automotives {
+  position: relative;
+}
+.image__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  opacity: 0;
+  transition: 0.3s;
+}
+.image__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.image__overlay:hover {
+  opacity: 1;
+}
+
+/* Photos */
+#city,
+#portraits,
+#automotives,
+#landscape,
+#portraits h1 {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.photos {
+  column-count: 3;
+  align-items: center;
+  padding: 3rem 5rem 3rem 5rem;
+}
+
+.photos img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 5px 10px 5px;
+  cursor: pointer;
+}
+
+#close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#lightbox {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+}
+
+#lightbox img {
+  width: 50%;
+  height: auto;
+}
+
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Category Navbar */
+#photomenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  color: black;
+  background-color: black;
+}
+#photomenu .photocat {
+  padding: 0.5rem;
+}
+#photomenu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#photomenu li {
+  padding: 1rem 1.5rem;
+}
+#photomenu a {
+  border-bottom: 3px transparent solid;
+  transition: border-color 0.5s;
+  color: white;
+}
+#photomenu a:hover {
+  border-color: white;
+}
+#photomenu a.current {
+  border-color: white;
+}
+
+/* Unsplash Photos */
+#unsplash {
+  margin: 20px 0 20px 0;
+  text-align: center;
+  background-color: white;
+}
+.image-container {
+  column-count: 4;
+}
+.image-container h1 {
+  margin: 20px;
+}
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  box-sizing: border-box;
+  margin: 0 5px 10px 5px;
+}
+
+/* Film */
+#film {
+  text-align: center;
+}
+.films {
+  column-count: 3;
+  align-items: center;
+  padding: 3rem 5rem 3rem 5rem;
+}
+.films video {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 5px 10px 5px;
+  cursor: pointer;
+}
+
+/* About Me */
+#aboutme {
+  height: 100vh;
+}
+.about {
+  display: flex;
+  margin: 5rem;
+}
+.aboutContent {
+  padding: 0 3rem;
+}
+
+/* Contact */
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 5px;
+  height: 100vh;
+}
+.contactForm {
+  background-color: black;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  width: 45%;
+}
+.contactForm h1 {
+  color: white;
+  text-align: center;
+  margin: 20px 0;
+}
+.contactForm form {
+  padding: 10px 70px;
+}
+.contactForm label {
+  color: white;
+  display: block;
+  margin-bottom: 5px;
+}
+.contactForm form input {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+.contactForm textarea {
+  width: 100%;
+  height: 100px;
+}
+
+.contactForm button {
+  padding: 15px;
+  width: 100%;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 3px;
+  margin: 2rem 0;
+}
+.contactForm button:hover {
+  background-color: rgb(228, 228, 228);
+}
+
+/* Footer */
+#main-footer {
+  color: white;
+  height: 2rem;
+}
+#main-footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  height: 5rem;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+#main-footer .footer-content .social .fab {
+  margin-right: 1rem;
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0.5rem;
+}
+#main-footer .footer-content .social .fab:hover {
+  background: lightgray;
+  color: black;
+}
+#main-footer .footer-content a {
+  color: white;
+}
+
+/* Media Queries */
+
+/* Phones */
+@media (max-width: 500px) {
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+}

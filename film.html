@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Portraits</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="home">
+      <div class="container">
+        <nav id="main-nav">
+          <h1>Matej Sefcik</h1>
+          <ul>
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="portraits.html">Photos</a></li>
+            <li><a href="#" class="current">Film</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="film">
+      <h1>Films</h1>
+      <div class="films">
+        <video controls>
+          <source src="img/Film/vid.mp4" type="video/mp4" />
+          <source src="img/Film/vid.mp4" type="video/ogg" />
+          Your browser does not support HTML video.
+        </video>
+        <video controls>
+          <source src="img/Film/vid.mp4" type="video/mp4" />
+          <source src="img/Film/vid.mp4" type="video/ogg" />
+          Your browser does not support HTML video.
+        </video>
+        <video controls>
+          <source src="img/Film/vid.mp4" type="video/mp4" />
+          <source src="img/Film/vid.mp4" type="video/ogg" />
+          Your browser does not support HTML video.
+        </video>
+        <video controls>
+          <source src="img/Film/vid.mp4" type="video/mp4" />
+          <source src="img/Film/vid.mp4" type="video/ogg" />
+          Your browser does not support HTML video.
+        </video>
+        <video controls>
+          <source src="img/Film/vid.mp4" type="video/mp4" />
+          <source src="img/Film/vid.mp4" type="video/ogg" />
+          Your browser does not support HTML video.
+        </video>
+      </div>
+    </section>
+
+    <!-- <section id="film">
+      <div class="video">
+        <iframe
+          width="420"
+          height="315"
+          src="https://www.youtube.com/embed/tgbNymZ7vqY"
+        >
+        </iframe>
+        <video class="vid__overlay" autoplay loop muted>
+          <source src="movie.mp4" type="video/mp4" />
+          <source src="movie.ogg" type="video/ogg" />
+          <div class="vid__title">
+            <h1>Video</h1>
+          </div>
+        </video>
+      </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer id="main-footer">
+      <div class="footer-content">
+        <p>Copyright &copy; 2021. All Rights Reserve</p>
+        <div class="social">
+          <a href="https://www.instagram.com/ralphvargas_/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/ralph-sormillon-9114431b6/"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <script>
+      let lightbox = document.createElement("div");
+      lightbox.id = "lightbox";
+      let close = document.createElement("span");
+      close.innerHTML = "&times;";
+      close.id = "close";
+
+      document.body.appendChild(lightbox);
+
+      const videos = document.querySelectorAll("video");
+      videos.forEach((video) => {
+        let vidsrc = video.getElementsByTagName("source");
+        // vidsrc.getAttribute("src");
+        console.log(vidsrc);
+        video.addEventListener("click", (e) => {
+          lightbox.classList.add("active");
+
+          let vid = document.createElement("video");
+          vid.controls = true;
+          let sourcemp4 = document.createElement("source");
+          sourcemp4.type = "video/mp4";
+          sourcemp4.src = video.src;
+          vid.appendChild(sourcemp4);
+
+          while (lightbox.firstChild) {
+            lightbox.removeChild(lightbox.firstChild);
+          }
+          lightbox.appendChild(close);
+          lightbox.appendChild(vid);
+        });
+      });
+
+      lightbox.addEventListener("click", (e) => {
+        if (e.target !== e.currentTarget) return;
+        lightbox.classList.remove("active");
+      });
+
+      close.addEventListener("click", (e) => {
+        lightbox.classList.remove("active");
+      });
+    </script> -->
+  </body>
+</html>

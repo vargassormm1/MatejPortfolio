@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fontawsome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Matej Sefcik</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="index">
+      <div class="container">
+        <!-- Navabar -->
+        <nav id="main-nav">
+          <h1>Matej Sefcik</h1>
+          <ul>
+            <li><a href="#" class="current">Overview</a></li>
+            <li><a href="city.html">Photos</a></li>
+            <li><a href="film.html">Film</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- Header Content -->
+        <div class="header-content">
+          <h1>Photographer +</h1>
+          <h1>Videographer</h1>
+          <a href="#overview" class="btn">Photos</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Overview -->
+    <section id="overview">
+      <div class="content">
+        <!-- City -->
+        <div class="city-scape">
+          <img src="img/city.jpg" alt="" />
+          <a href="city.html">
+            <div class="image__overlay">
+              <div class="image__title">
+                <h1>Cityscape/Street</h1>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Portrait -->
+        <div class="portraits" style="background-color: black">
+          <img src="img/portrait.jpg" alt="" />
+          <a href="portraits.html">
+            <div class="image__overlay">
+              <div class="image__title">
+                <h1>Portraits</h1>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Landscape -->
+        <div class="landscape" style="background-color: coral">
+          <img src="img/mountain.jpg" alt="" />
+          <a href="landscape.html">
+            <div class="image__overlay">
+              <div class="image__title">
+                <h1>Landscape/Travel</h1>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Automotives -->
+        <div class="automotives" style="background-color: crimson">
+          <img src="img/car.jpg" alt="" />
+          <a href="automotives.html">
+            <div class="image__overlay">
+              <div class="image__title">
+                <h1>Automotive</h1>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Unsplash -->
+    <section id="unsplash">
+      <div class="container">
+        <div class="image-container" id="image-container"></div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+      <div class="footer-content">
+        <p>Copyright &copy; 2021. All Rights Reserve</p>
+        <div class="social">
+          <a href="https://www.instagram.com/ralphvargas_/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/ralph-sormillon-9114431b6/"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
