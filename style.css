@@ -168,7 +168,7 @@ ul {
 .photos {
   column-count: 3;
   align-items: center;
-  padding: 3rem 5rem 3rem 5rem;
+  padding: 0 5rem 3rem 5rem;
 }
 
 .photos img {
@@ -265,6 +265,7 @@ ul {
 /* Film */
 #film {
   text-align: center;
+  height: 100vh;
 }
 .films {
   column-count: 3;
