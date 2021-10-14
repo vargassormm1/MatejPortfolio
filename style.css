@@ -380,8 +380,72 @@ ul {
 
 /* Media Queries */
 
-/* Phones */
+/* Smart Phones */
 @media (max-width: 500px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  #main-nav li {
+    padding: 0.8rem;
+  }
+  .header-content {
+    padding-top: 50%;
+    line-height: normal;
+    font-size: larger;
+  }
+
+  /* Photos */
+  #home {
+    height: 10rem;
+    width: 100vw;
+  }
+  #home li {
+    font-size: small;
+  }
+  #photomenu {
+    height: 3rem;
+    color: black;
+    background-color: black;
+  }
+  #photomenu li {
+    padding: 1rem 0.5rem;
+    font-size: x-small;
+  }
+  #home {
+    display: block;
+  }
+  .photos {
+    height: 100vh;
+    padding: 0 1rem;
+    column-count: 2;
+  }
+  .photos img {
+    margin: 1px;
+  }
+
+  /* Films */
+  .films {
+    height: 100vh;
+    padding: 0 0.5rem;
+    column-count: 2;
+  }
+  .films video {
+    margin: 1px 1px 5px 1px;
+  }
+
+  /* About Me */
+  #aboutme {
+    height: 100%;
+  }
+  .about {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about img {
+    width: 50%;
+  }
 }
 
 /* Tablet */
