@@ -466,17 +466,15 @@ ul {
   /* Form */
   #contact {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
-    background-color: white;
     border-radius: 5px;
     height: 100vh;
   }
-  /* .contactForm {
+  .contactForm {
     background-color: black;
     border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    width: 45%;
+    width: 400px;
   }
   .contactForm h1 {
     color: white;
@@ -484,38 +482,35 @@ ul {
     margin: 20px 0;
   }
   .contactForm form {
-    padding: 10px 70px;
+    padding: 1rem;
   }
-  .contactForm label {
+  /* .contactForm label {
     color: white;
     display: block;
     margin-bottom: 5px;
-  }
+  } */
   .contactForm form input {
     display: inline-block;
     width: 100%;
-    padding: 10px;
-    font-size: 14px;
-    margin-bottom: 15px;
+    padding: 8px;
+    font-size: 12px;
+    margin-bottom: 13px;
     box-sizing: border-box;
   }
   .contactForm textarea {
     width: 100%;
     height: 100px;
   }
-  
+
   .contactForm button {
-    padding: 15px;
+    padding: 13px;
     width: 100%;
     background-color: white;
     color: black;
     border: none;
     border-radius: 3px;
-    margin: 2rem 0;
+    margin: 1rem 0;
   }
-  .contactForm button:hover {
-    background-color: rgb(228, 228, 228);
-  } */
 }
 
 /* Tablet */
