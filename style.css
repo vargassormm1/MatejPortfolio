@@ -1,5 +1,4 @@
 /* General Styles */
-
 * {
   margin: 0;
   padding: 0;
@@ -121,7 +120,7 @@ ul {
   object-fit: cover;
   overflow: hidden;
 }
-/* Overlay */
+/* Overlay
 .city-scape {
   position: relative;
 }
@@ -153,24 +152,14 @@ ul {
 }
 .image__overlay:hover {
   opacity: 1;
-}
+} */
 
 /* Photos */
-#city,
-#portraits,
-#automotives,
-#landscape,
-#portraits h1 {
-  text-align: center;
-  margin-top: 5rem;
-}
-
 .photos {
   column-count: 3;
   align-items: center;
   padding: 0 5rem 3rem 5rem;
 }
-
 .photos img {
   width: 100%;
   height: auto;
@@ -178,7 +167,6 @@ ul {
   margin: 0 5px 10px 5px;
   cursor: pointer;
 }
-
 #close {
   color: white;
   position: absolute;
@@ -188,7 +176,6 @@ ul {
   font-weight: bold;
   cursor: pointer;
 }
-
 #lightbox {
   position: fixed;
   z-index: 10000;
@@ -198,12 +185,10 @@ ul {
   background-color: rgba(0, 0, 0, 0.9);
   display: none;
 }
-
 #lightbox img {
   width: 50%;
   height: auto;
 }
-
 #lightbox.active {
   display: flex;
   justify-content: center;
@@ -218,6 +203,7 @@ ul {
   height: 6rem;
   color: black;
   background-color: black;
+  margin-bottom: 2rem;
 }
 #photomenu .photocat {
   padding: 0.5rem;
@@ -293,6 +279,10 @@ ul {
 .pic {
   display: flex;
   justify-content: center;
+}
+.pic img {
+  width: 500px;
+  height: auto;
 }
 .aboutContent {
   padding: 0 2rem;
@@ -465,54 +455,36 @@ ul {
 
   /* Form */
   #contact {
-    display: flex;
     align-items: start;
     justify-content: center;
-    border-radius: 5px;
-    height: 100vh;
+    margin-top: 2rem;
   }
   .contactForm {
-    background-color: black;
-    border-radius: 5px;
-    width: 400px;
+    width: 350px;
   }
   .contactForm h1 {
-    color: white;
-    text-align: center;
-    margin: 20px 0;
+    margin: 15px 0;
   }
   .contactForm form {
     padding: 1rem;
   }
-  /* .contactForm label {
-    color: white;
-    display: block;
-    margin-bottom: 5px;
-  } */
   .contactForm form input {
-    display: inline-block;
-    width: 100%;
     padding: 8px;
-    font-size: 12px;
-    margin-bottom: 13px;
-    box-sizing: border-box;
   }
-  .contactForm textarea {
-    width: 100%;
-    height: 100px;
-  }
-
   .contactForm button {
-    padding: 13px;
-    width: 100%;
-    background-color: white;
-    color: black;
-    border: none;
-    border-radius: 3px;
     margin: 1rem 0;
   }
-}
 
-/* Tablet */
-@media (max-width: 768px) {
+  /* Footer */
+  #main-footer {
+    height: 6rem;
+  }
+  #main-footer .footer-content {
+    flex-direction: column;
+    justify-content: center;
+    height: 6rem;
+  }
+  #main-footer .footer-content .social .fab {
+    margin-top: 0.5rem;
+  }
 }
