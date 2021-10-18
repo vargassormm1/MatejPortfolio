@@ -21,7 +21,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
 
-    <title>Portraits</title>
+    <title>Matej Sefcik</title>
   </head>
   <body>
     <!-- Header -->
@@ -44,26 +44,6 @@
       <div class="films">
         <video controls>
           <source src="img/Film/vid.mp4#t=0.1"" type="video/mp4" />
-          <source src="img/Film/vid.mp4" type="video/ogg" />
-          Your browser does not support HTML video.
-        </video>
-        <video controls>
-          <source src="img/Film/vid.mp4" type="video/mp4" />
-          <source src="img/Film/vid.mp4" type="video/ogg" />
-          Your browser does not support HTML video.
-        </video>
-        <video controls>
-          <source src="img/Film/vid.mp4" type="video/mp4" />
-          <source src="img/Film/vid.mp4" type="video/ogg" />
-          Your browser does not support HTML video.
-        </video>
-        <video controls>
-          <source src="img/Film/vid.mp4" type="video/mp4" />
-          <source src="img/Film/vid.mp4" type="video/ogg" />
-          Your browser does not support HTML video.
-        </video>
-        <video controls>
-          <source src="img/Film/vid.mp4" type="video/mp4" />
           <source src="img/Film/vid.mp4" type="video/ogg" />
           Your browser does not support HTML video.
         </video>
@@ -105,46 +85,5 @@
         </div>
       </div>
     </footer>
-    <!-- <script>
-      let lightbox = document.createElement("div");
-      lightbox.id = "lightbox";
-      let close = document.createElement("span");
-      close.innerHTML = "&times;";
-      close.id = "close";
-
-      document.body.appendChild(lightbox);
-
-      const videos = document.querySelectorAll("video");
-      videos.forEach((video) => {
-        let vidsrc = video.getElementsByTagName("source");
-        // vidsrc.getAttribute("src");
-        console.log(vidsrc);
-        video.addEventListener("click", (e) => {
-          lightbox.classList.add("active");
-
-          let vid = document.createElement("video");
-          vid.controls = true;
-          let sourcemp4 = document.createElement("source");
-          sourcemp4.type = "video/mp4";
-          sourcemp4.src = video.src;
-          vid.appendChild(sourcemp4);
-
-          while (lightbox.firstChild) {
-            lightbox.removeChild(lightbox.firstChild);
-          }
-          lightbox.appendChild(close);
-          lightbox.appendChild(vid);
-        });
-      });
-
-      lightbox.addEventListener("click", (e) => {
-        if (e.target !== e.currentTarget) return;
-        lightbox.classList.remove("active");
-      });
-
-      close.addEventListener("click", (e) => {
-        lightbox.classList.remove("active");
-      });
-    </script> -->
   </body>
 </html>
