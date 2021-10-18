@@ -44,26 +44,18 @@
     <section id="contact">
       <div class="contactForm">
         <h1>Contact Me</h1>
-        <form>
-          <div class="text-fields">
-            <label for="name">Full Name</label>
-            <input type="text" class="text-input name-input" name="name" />
-            <label for="Subject">Subject</label>
-            <input
-              type="text"
-              class="text-input subject-input"
-              name="subject"
-            />
-            <label for="email">Email</label>
-            <input type="email" class="text-input email-input" name="email" />
-            <label for="phone">Phone Number</label>
-            <input type="text" class="text-input phone-input" name="phone" />
-            <label for="Message">Message</label>
-            <textarea
-              class="text-input message-input"
-              name="message"
-            ></textarea>
-          </div>
+        <form method="post" data-netlify="true" data-netlify-recaptcha="true">
+          <label for="name">Full Name</label>
+          <input type="text" name="name" required />
+          <label for="Subject">Subject</label>
+          <input type="text" name="subject" />
+          <label for="email">Email</label>
+          <input type="email" name="email" required />
+          <label for="phone">Phone Number</label>
+          <input type="text" name="phone" />
+          <label for="Message">Message</label>
+          <textarea name="message"></textarea>
+          <div data-netlify-recaptcha="true"></div>
           <button type="submit">Submit</button>
         </form>
       </div>
