@@ -195,12 +195,12 @@ ul {
     display: block;
   }
   .photos {
-    height: 100vh;
+    height: 100%;
     padding: 0 1rem;
     column-count: 2;
   }
   .photos img {
-    margin: 1px;
+    margin: 1px 1px 5px 1px;
   }
 }
 
@@ -390,6 +390,7 @@ ul {
 @media (max-width: 500px) {
   #main-footer {
     height: 6rem;
+    margin-top: 1rem;
   }
   #main-footer .footer-content {
     flex-direction: column;
