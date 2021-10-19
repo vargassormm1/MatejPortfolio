@@ -282,8 +282,14 @@ ul {
 .aboutContent {
   padding: 0 2rem;
 }
+.aboutContent h1 {
+  margin-bottom: 1rem;
+}
 .aboutContent p {
   text-align: left;
+  line-height: 1.7em;
+  margin-bottom: 13px;
+  font-weight: 100;
 }
 /* Media Query */
 @media (max-width: 500px) {
