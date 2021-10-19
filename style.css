@@ -26,7 +26,7 @@ ul {
   color: white;
   text-align: center;
   background-color: white;
-  background: url("/img/home.jpg") no-repeat center left/cover;
+  background: url("/img/home.jpg") no-repeat center center/cover;
   height: 100vh;
 }
 #home {
@@ -106,9 +106,6 @@ ul {
 }
 /* Media Query */
 @media (max-width: 550px) {
-  #index {
-    background-size: 350%;
-  }
   #main-nav {
     flex-direction: column;
     align-items: center;
@@ -119,21 +116,10 @@ ul {
   .header-content {
     padding-top: 20%;
     line-height: normal;
-    font-size: medium;
+    font-size: small;
   }
   .boxOne {
-    width: 80%;
-  }
-  .boxTwo {
-    width: 70%;
-  }
-}
-@media (max-width: 400px) {
-  #index {
-    background-size: cover;
-  }
-  .boxOne {
-    width: 85%;
+    width: 75%;
   }
   .boxTwo {
     width: 70%;
@@ -274,7 +260,7 @@ ul {
 
 /* About Me */
 #aboutme {
-  height: 100vh;
+  height: 100%;
   padding: 0 5rem;
 }
 .about {
@@ -326,6 +312,17 @@ ul {
     text-align: center;
   }
 }
+@media (max-height: 380px) {
+  .pic img {
+    width: 500px;
+    height: auto;
+  }
+  .about {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 4rem;
+  }
+}
 
 /* Contact */
 #contact {
@@ -334,7 +331,7 @@ ul {
   justify-content: center;
   background-color: white;
   border-radius: 5px;
-  height: 100vh;
+  height: 100%;
 }
 .contactForm {
   background-color: black;
