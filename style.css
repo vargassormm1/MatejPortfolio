@@ -26,7 +26,7 @@ ul {
   color: white;
   text-align: center;
   background-color: white;
-  background: url("/img/home.jpg") no-repeat center right/cover;
+  background: url("/img/home.jpg") no-repeat center left/cover;
   height: 100vh;
 }
 #home {
