@@ -245,7 +245,7 @@ ul {
 .about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 5rem;
+  margin: 4rem;
 }
 .pic {
   display: flex;
@@ -257,6 +257,9 @@ ul {
 }
 .aboutContent {
   padding: 0 2rem;
+}
+.aboutContent p {
+  text-align: left;
 }
 /* Media Query */
 @media (max-width: 500px) {
