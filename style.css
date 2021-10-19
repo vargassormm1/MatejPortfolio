@@ -132,6 +132,12 @@ ul {
   #index {
     background-size: cover;
   }
+  .boxOne {
+    width: 85%;
+  }
+  .boxTwo {
+    width: 70%;
+  }
 }
 
 /* Photos */
