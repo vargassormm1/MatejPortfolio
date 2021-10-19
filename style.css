@@ -87,6 +87,7 @@ ul {
 }
 .header-content h6 {
   font-weight: 200;
+  color: white;
 }
 /* Media Query */
 @media (max-width: 500px) {
