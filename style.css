@@ -39,17 +39,23 @@ ul {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
-  color: black;
+  color: white;
+}
+#index #main-nav a {
+  color: white;
 }
 #home #main-nav a {
+  color: black;
+}
+#home #main-nav ul li a {
   border-bottom: 3px transparent solid;
   transition: border-color 0.5s;
   color: black;
 }
-#home #main-nav a:hover {
+#home #main-nav ul li a:hover {
   border-color: black;
 }
-#home #main-nav a.current {
+#home #main-nav ul li a.current {
   border-color: black;
 }
 #main-nav {
@@ -74,10 +80,10 @@ ul {
   transition: border-color 0.5s;
   color: white;
 }
-#main-nav a:hover {
+#main-nav ul li a:hover {
   border-color: white;
 }
-#main-nav a.current {
+#main-nav ul li a.current {
   border-color: white;
 }
 .header-content {
