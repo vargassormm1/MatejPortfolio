@@ -344,6 +344,7 @@ ul {
   border-radius: 5px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   width: 45%;
+  margin-top: 3rem;
 }
 .contactForm h1 {
   color: white;
