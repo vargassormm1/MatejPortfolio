@@ -237,30 +237,33 @@ ul {
 
 /* Film */
 #film {
-  text-align: center;
-  height: 100vh;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 .films {
-  column-count: 3;
-  align-items: center;
   padding: 3rem 5rem 3rem 5rem;
+  text-align: center;
 }
 .films video {
-  width: 100%;
+  width: 500px;
   height: auto;
-  display: block;
-  margin: 0 5px 10px 5px;
   cursor: pointer;
+}
+.films p {
+  font-weight: 100;
 }
 /* Media Query */
 @media (max-width: 500px) {
+  #film {
+    height: 100%;
+    grid-template-columns: 1fr;
+  }
   .films {
-    height: 100vh;
     padding: 0 0.5rem;
-    column-count: 2;
   }
   .films video {
-    margin: 1px 1px 5px 1px;
+    width: 100%;
   }
 }
 
