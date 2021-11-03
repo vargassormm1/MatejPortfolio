@@ -391,10 +391,11 @@ ul {
   #contact {
     align-items: start;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
   .contactForm {
     width: 350px;
+    margin-top: 0;
   }
   .contactForm h1 {
     margin: 15px 0;
