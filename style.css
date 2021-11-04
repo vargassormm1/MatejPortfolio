@@ -134,7 +134,7 @@ ul {
 
 /* Photos */
 .photos {
-  column-count: 3;
+  column-count: 5;
   align-items: center;
   padding: 0 4rem 3rem 4rem;
 }
