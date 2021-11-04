@@ -257,10 +257,12 @@ ul {
 @media (max-width: 500px) {
   #film {
     height: 100%;
+    width: auto;
     grid-template-columns: 1fr;
   }
   .films {
-    padding: 0 0.5rem;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
   }
   .films video {
     width: 100%;
