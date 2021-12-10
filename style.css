@@ -222,7 +222,7 @@ ul {
     background-color: black;
   }
   #photomenu li {
-    padding: 1rem 0.5rem;
+    padding: 1rem 0.3rem;
     font-size: x-small;
   }
   #home {
@@ -235,6 +235,11 @@ ul {
   }
   .photos img {
     margin: 1px 1px 5px 1px;
+  }
+  #realEstate .photos {
+    height: 100%;
+    padding: 0 1rem;
+    column-count: 2;
   }
 }
 
