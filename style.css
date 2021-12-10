@@ -145,6 +145,9 @@ ul {
   margin: 0 1px 10px 1px;
   cursor: pointer;
 }
+#realEstate .photos {
+  column-count: 4;
+}
 #close {
   color: white;
   position: absolute;
